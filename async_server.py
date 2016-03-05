@@ -13,7 +13,7 @@ class MyThread(threading.Thread):
         if data:
             if data != 'close':
                 self.channel.send(data)
-                
+                print data       
         self.channel.close()
         print("Closed connection:" + self.details[0])
                        
